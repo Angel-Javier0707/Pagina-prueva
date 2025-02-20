@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-header{
+    width: 100%;
+    position: relative;
+    height: 700px;
+    background: url(91352.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-repeat: no-repeat;
+}
+
+.container-header > header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.container-header > header > .logo {
+   padding: 20px 30px;
+}
+
+.container-header > header > .lista ,
+.container-header > header > .lista > nav {
+    height: auto;
+    position: relative;
+}
+
+.container-header > header > .lista > nav > ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    height: auto;
+    padding: 10px 20px;
+    border-bottom-left-radius: 50px;
+    background: white;
+    text-transform: uppercase;
+}
+
+.container-header > header > .lista > nav > ul > li{
+    padding: 10px;
+    margin-left: 10px;
+    position: relative;
+    font-size: 18px;
+    transition: all 300ms ease;
+}
+
+.container-header > header > .lista > nav > ul > li:hover {
+    transition: all 300ms ease;
+    transform: scale(1.1) translateX(-15px);
+    margin-left: 20px;
+    margin-right: 20px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.container-header > header > .lista > nav > ul > li:nth-child(1):hover {
+    border-bottom-left-radius: 20px;
+}
+
+
+
+.container-header > .container-info-header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    position: relative;
+    align-items: start;
+    justify-content: end;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.container-header > .container-info-header > p {
+    margin-bottom: 30px;
+    font-size: 60px;
+    max-width: 1000px;
+}
+
+.container-header > .container-info-header > .botones > a {
+    padding: 15px 20px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.container-header > .container-info-header > .botones > a:nth-child(2) {
+    margin-right: 10px;
+}
+
+main {
+    margin-top: 60px;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+main > .container-move {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+    z-index: 5;
+}
+
+main > .container-move > button{
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+.container-producto-all{
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    background: rgb(51,51,76);
+}
+
+.container-producto-all > h1{
+    padding: 20px;
+    font-size: 70px;
+}
+
+.container-info {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    padding: 10px 0px;
+}
+
+.container-info > .content1{
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;
+    padding: 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(auto , 1fr));
+    gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.container-info > .content1 > .info1 {
+   border-radius: 10px;
+   padding: 20px;
+   box-shadow: 0px 2px 2px white;
+   transition: all 300ms ease;
+   color: white;
+}
+
+.container-info > .content1 > .info1:hover{
+    transition: all 300ms ease;
+    transform: scale(1.1) translateY(15px);
+    background: black;
+    color: white;
+    box-shadow: 0px 0px 5px black;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.container-info > .content1 > .info1 > button {
+    padding: 10px 15px;
+    background: white;
+    border: 1px solid black;
+    font-size: 18px;
+    transition: all 300ms ease;
+    margin-top: 10px;
+}
+
+.container-info > .content1 > .info1:hover button{
+    border: 1px solid white;
+    color: white;
+    background: black;
+    transition: all 300ms ease;
+}
+
+
+.movimientoS{
+    transition: all 1s ease;
+    margin-left: -100%;
+}
+
+.movimientoSS{
+    transition: all 1s ease;
+    margin-left: -200%;
+}
+
+.movimientoA{
+    transition: all 1s ease;
+    margin: 0;
+}
+
+.movimientoAA{
+    transition: all 1s ease;
+    margin-left: -100%;
+}
+
+#btn1{
+    transition: all 500ms ease;
+}
+
+#btn2{
+    transition: all 500ms ease;
+    display: flex;
+}
+
+.activa {
+    transition: all 500ms ease;
+    box-shadow: inset 30px 30px 30px black;
+    color: white;
+    transition: all 300ms ease;
+}
+
+.about {
+    width: 100%;
+    padding: 30px 50px;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+} 
+
+.about > .img {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-right: 20px;
+    overflow: hidden;
+    animation: 3s movee ease alternate infinite;
+}
+
+@keyframes movee {
+    from{
+        transform: translateY(0);
+        border-radius: 0;
+    }to {
+        transform: translateY(-30px);
+        border-radius: 50px;
+    }
+}
+
+.about  > .paragraft{
+ width: 100%;
+ position: relative;
+}
+
+.about  > .paragraft > p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.about  > .paragraft > button{
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    background: transparent;
+    border: 1px solid black;
+}
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.slogan p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #f39c12;
+}
